@@ -4,7 +4,7 @@
 (function(){
 'use strict';
 const SUPABASE_URL='https://prwboqyigjqdwpolcpit.supabase.co';
-const SUPABASE_ANON_KEY=''; // Supabase → Settings → API → anon public key
+const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InByd2JvcXlpZ2pxZHdwb2xjcGl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4ODE0NDgsImV4cCI6MjEwODQ1NzQ0OH0.NA03Yppo_r0d0_kIiPpAKALw6OQLthdMVH9-koxvc_Y'; // anon public key: safe in the browser, access is limited by row-level security
 const TABLE='prayer_book_state';
 const SYNC_PREFIXES=['oratorium-','mediator-dei-','md-'];
 const SYNC_META='luca-sync-at'; // when this device last matched the server; never synced itself
