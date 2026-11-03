@@ -1,0 +1,15 @@
+{
+  "name": "Mediator Dei — Traditional Catholic Prayer Book",
+  "short_name": "Mediator Dei",
+  "description": "A traditional Catholic prayer companion: daily Rosary, 1962 calendar overview, saints, novenas, litanies, Latin prayers and devotions.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#211a1a",
+  "theme_color": "#42262c",
+  "icons": [
+    { "src": "icons/mediator-dei-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/mediator-dei-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/mediator-dei-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -4,11 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="theme-color" content="#42262c" />
-<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="manifest" href="manifest.webmanifest" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Mediator Dei" />
-<link rel="apple-touch-icon" href="/icons/mediator-dei-192.png" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
 <meta property="og:title" content="Mediator Dei — A Traditional Catholic Prayer Book" />
 <meta property="og:description" content="A traditional Catholic prayer companion: daily Rosary, 1962 calendar overview, saints, novenas, litanies, Latin prayers and devotions." />
 <meta property="og:type" content="website" />
@@ -589,7 +589,7 @@ if(location.hash){let hash=decodeURIComponent(location.hash.slice(1));if(taskFor
 </script>
 <script>
 if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js').catch(console.warn));
+  window.addEventListener('load', () => navigator.serviceWorker.register("service-worker.js").catch(console.warn));
 }
 </script>
 </body>
