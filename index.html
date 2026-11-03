@@ -111,6 +111,21 @@ body.library-view .md-feature-entrance{display:none}
 /* The desktop layout uses the left-side chapter index; horizontal tabs are mobile-only. */
 @media(min-width:851px){.mobile-nav{display:none!important}}
 
+/* Accounts · sign in, sign out, and sync */
+.account-btn{background:var(--wine);color:#fff5e2;border-color:#5f2832;font-family:'Cinzel',serif;font-size:12px;letter-spacing:.05em;max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.account-btn:hover{background:#81434c;border-color:#5f2832;color:#fff5e2}
+.auth-overlay{position:fixed;inset:0;z-index:30;background:#211a1acc;display:none;place-items:center;padding:16px;overflow-y:auto}.auth-overlay.open{display:grid}
+.auth-card{position:relative;width:min(100%,410px);background:linear-gradient(135deg,#faf4e7,#f0e3cc);border:1px solid #b49965;box-shadow:inset 0 0 0 5px #f8f0e1,inset 0 0 0 6px #d8c19a,0 14px 44px #0007;padding:32px 30px 24px;color:var(--ink);text-align:center}
+.auth-close{position:absolute;top:8px;right:10px;border:0;background:transparent;font-size:27px;line-height:1;color:#8a6a48;padding:4px 8px}
+.auth-kicker{font:11px 'Cinzel',serif;letter-spacing:.16em;color:#9a744a}.auth-card h3{font:500 27px 'Cinzel',serif;color:#5c313b;margin:9px 0 8px}
+.auth-sub{font-style:italic;color:#715f4c;font-size:17px;line-height:1.4;margin:0 0 18px}
+.auth-form{display:grid;gap:12px;text-align:left}.auth-field span{display:block;font:11px 'Cinzel',serif;letter-spacing:.08em;color:#7b5d43;margin-bottom:5px}
+.auth-field input{width:100%;border:1px solid #c8ae83;background:#fffaef;color:#3a3027;padding:11px 13px;font:18px 'EB Garamond',serif;border-radius:2px}.auth-field input:focus{outline:2px solid #c6ac83;border-color:#874c52}
+.auth-form .hero-cta{margin-top:6px;padding:13px}.auth-msg{min-height:20px;margin:2px 0 0;font-size:15px;color:#5f7457;text-align:center}.auth-msg.error{color:#9e3d48}
+.auth-links{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:14px}.auth-link{border:0;background:transparent;color:#70414b;text-decoration:underline;text-underline-offset:3px;font-size:15px;padding:4px 0}
+.auth-status{font:12px 'Cinzel',serif;letter-spacing:.08em;color:#5f7457;margin:0 0 18px}.auth-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.auth-note{font-size:14px;font-style:italic;color:#806c55;margin:16px 0 0}
+@media(max-width:580px){.account-btn{max-width:130px}}@media(max-width:420px){#printBtn{display:none}}
+@media print{.account-btn,.auth-overlay{display:none!important}}
+
 </style>
 </head>
 <body>
@@ -125,7 +140,7 @@ body.library-view .md-feature-entrance{display:none}
     <div class="mobile-head"><div class="brand"><div class="brand-mark">✠</div><div class="brand-name">MEDIATOR DEI</div></div><span style="font:10px Cinzel,serif;letter-spacing:.1em">ORA ET LABORA</span></div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Prayer sections"></nav>
     <main class="main"><div class="container">
-      <header class="topbar"><div class="topbar-left">✥ &nbsp; AN OLD RULE FOR THE MODERN HOME</div><div class="topbar-right"><span class="date" id="todayDate"></span><button type="button" class="mode-btn" id="printBtn" title="Print the prayers">⎙ &nbsp; Print</button></div></header>
+      <header class="topbar"><div class="topbar-left">✥ &nbsp; AN OLD RULE FOR THE MODERN HOME</div><div class="topbar-right"><span class="date" id="todayDate"></span><button type="button" class="mode-btn" id="printBtn" title="Print the prayers">⎙ &nbsp; Print</button><button type="button" class="mode-btn account-btn" id="accountBtn">Sign in</button></div></header>
       <section class="hero" aria-labelledby="heroTitle"><div><div class="eyebrow">✠ &nbsp; IN NOMINE PATRIS, ET FILII, ET SPIRITUS SANCTI</div><h1 id="heroTitle">A life ordered<br><em>toward Heaven.</em></h1><p class="hero-desc">A traditional Catholic prayer book for a life of devotion: morning offering, Angelus, fifteen-mystery Rosary, nightly examen, and a fresh exhortation to perseverance each day.</p><div class="hero-actions"><button class="hero-cta" id="beginBtn">✠ &nbsp; Begin today's prayers</button><button class="hero-secondary" id="rosaryBtn">Pray the Rosary &nbsp; ›</button></div></div>
         <div class="hero-art" aria-hidden="true"><svg viewBox="0 0 310 350" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M155 9C104 46 51 69 51 145V318h208V145C259 69 206 46 155 9Z" fill="#f1e5ca" stroke="#af9162" stroke-width="3"/><path d="M155 23C108 58 64 85 64 150v156h182V150c0-65-44-92-91-127Z" stroke="#af9162" stroke-width="1.5"/><path d="M155 38C114 70 77 94 77 153v140h156V153c0-59-37-83-78-115Z" fill="#622f3a"/><path d="M155 49C118 80 87 105 87 155v128h136V155c0-50-31-75-68-106Z" stroke="#b69b65" stroke-width="1"/><path d="M155 70V280M95 174h120" stroke="#b69b65" stroke-width=".75" opacity=".5"/><path d="M155 90v151M119 131h72" stroke="#d8b879" stroke-width="6" stroke-linecap="round"/><path d="M155 75v184M105 130h100" stroke="#6c3d40" stroke-width="1"/><circle cx="155" cy="130" r="10" fill="#dfc990" stroke="#a7824c"/><path d="M111 214c15-13 31-11 44 3 13-14 29-16 44-3-4 24-18 39-44 54-26-15-40-30-44-54Z" fill="#c9a46d" opacity=".22"/><text x="155" y="224" fill="#efddaa" font-family="Georgia,serif" font-size="32" text-anchor="middle" letter-spacing="4">IHS</text><path d="M155 185v14m-7-7h14" stroke="#e6c78f" stroke-width="2"/><path d="M100 272h110M100 278h110" stroke="#c9a46d"/><circle cx="155" cy="20" r="3" fill="#af9162"/><path d="m155 7-4-7m4 7 4-7" stroke="#aa8a57"/><path d="M43 319h224M30 328h250" stroke="#af9162" stroke-width="2"/><path d="m28 328 5-7 5 7-5 8Z" fill="#b99a61"/><path d="m277 328-5-7-5 7 5 8Z" fill="#b99a61"/><path d="M37 149H15m13-11v22m9 13H22m15-48H22M273 149h22m-13-11v22m-9 13h15m-15-48h15" stroke="#b99a61" stroke-width="1.3"/></svg></div>
       </section>
@@ -587,6 +602,8 @@ $('completeBtn').addEventListener('click',()=>toggleDone(selected));$('nextBtn')
 if(location.hash){let hash=decodeURIComponent(location.hash.slice(1));if(taskFor(hash).id===hash)selected=hash;}buildDailyInvitation();renderNav();renderSchedule();renderReader();
 })();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="auth.js"></script>
 <script>
 if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
   window.addEventListener('load', () => navigator.serviceWorker.register("service-worker.js").catch(console.warn));
