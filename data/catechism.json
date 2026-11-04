@@ -1,0 +1,80 @@
+{
+  "title": "Baltimore Catechism No. 2",
+  "source": "A Catechism of Christian Doctrine, prepared and enjoined by order of the Third Plenary Council of Baltimore (1885). Public domain.",
+  "review": "Needs review: transcribed for this app; check the wording against a printed 1885 edition. Lessons 1–3 only for now; further lessons will be added as they are checked.",
+  "lessons": [
+    {
+      "n": 1,
+      "title": "On the End of Man",
+      "qa": [
+        ["Who made the world?", "God made the world."],
+        ["Who is God?", "God is the Creator of heaven and earth, and of all things."],
+        ["What is man?", "Man is a creature composed of body and soul, and made to the image and likeness of God."],
+        ["Is this likeness in the body or in the soul?", "This likeness is chiefly in the soul."],
+        ["How is the soul like to God?", "The soul is like to God because it is a spirit that will never die, and has understanding and free will."],
+        ["Why did God make you?", "God made me to know Him, to love Him, and to serve Him in this world, and to be happy with Him for ever in the next."],
+        ["Of which must we take more care, our soul or our body?", "We must take more care of our soul than of our body."],
+        ["Why must we take more care of our soul than of our body?", "We must take more care of our soul than of our body, because in losing our soul we lose God and everlasting happiness."],
+        ["What must we do to save our souls?", "To save our souls, we must worship God by faith, hope, and charity; that is, we must believe in Him, hope in Him, and love Him with all our heart."],
+        ["How shall we know the things which we are to believe?", "We shall know the things which we are to believe from the Catholic Church, through which God speaks to us."],
+        ["Where shall we find the chief truths which the Church teaches?", "We shall find the chief truths which the Church teaches in the Apostles' Creed."]
+      ]
+    },
+    {
+      "n": 2,
+      "title": "On God and His Perfections",
+      "qa": [
+        ["What is God?", "God is a spirit infinitely perfect."],
+        ["Had God a beginning?", "God had no beginning; He always was and He always will be."],
+        ["Where is God?", "God is everywhere."],
+        ["If God is everywhere, why do we not see Him?", "We do not see God, because He is a pure spirit and cannot be seen with bodily eyes."],
+        ["Does God see us?", "God sees us and watches over us."],
+        ["Does God know all things?", "God knows all things, even our most secret thoughts, words, and actions."],
+        ["Can God do all things?", "God can do all things, and nothing is hard or impossible to Him."],
+        ["Is God just, holy, and merciful?", "God is all just, all holy, all merciful, as He is infinitely perfect."]
+      ]
+    },
+    {
+      "n": 3,
+      "title": "On the Unity and Trinity of God",
+      "qa": [
+        ["Is there but one God?", "Yes; there is but one God."],
+        ["Why can there be but one God?", "There can be but one God, because God, being supreme and infinitely perfect, cannot have an equal."],
+        ["How many persons are there in God?", "In God there are three Divine Persons, really distinct, and equal in all things—the Father, the Son, and the Holy Ghost."],
+        ["Is the Father God?", "The Father is God and the first Person of the Blessed Trinity."],
+        ["Is the Son God?", "The Son is God and the second Person of the Blessed Trinity."],
+        ["Is the Holy Ghost God?", "The Holy Ghost is God and the third Person of the Blessed Trinity."],
+        ["What do you mean by the Blessed Trinity?", "By the Blessed Trinity I mean one God in three Divine Persons."],
+        ["Are the three Divine Persons equal in all things?", "The three Divine Persons are equal in all things."],
+        ["Are the three Divine Persons one and the same God?", "The three Divine Persons are one and the same God, having one and the same Divine nature and substance."],
+        ["Can we fully understand how the three Divine Persons are one and the same God?", "We cannot fully understand how the three Divine Persons are one and the same God, because this is a mystery."],
+        ["What is a mystery?", "A mystery is a truth which we cannot fully understand."]
+      ]
+    }
+  ],
+  "lists": {
+    "precepts": {
+      "title": "The Commandments of the Church",
+      "items": [
+        "To hear Mass on Sundays and holydays of obligation.",
+        "To fast and abstain on the days appointed.",
+        "To confess at least once a year.",
+        "To receive the Holy Eucharist during the Easter time.",
+        "To contribute to the support of our pastors.",
+        "Not to marry persons who are not Catholics, or who are related to us within the third degree of kindred, nor privately without witnesses, nor to solemnize marriage at forbidden times."
+      ]
+    },
+    "capital": {
+      "title": "The Seven Capital Sins",
+      "items": ["Pride", "Covetousness", "Lust", "Anger", "Gluttony", "Envy", "Sloth"]
+    },
+    "corporal": {
+      "title": "The Corporal Works of Mercy",
+      "items": ["To feed the hungry.", "To give drink to the thirsty.", "To clothe the naked.", "To ransom the captive.", "To harbor the harborless.", "To visit the sick.", "To bury the dead."]
+    },
+    "spiritual": {
+      "title": "The Spiritual Works of Mercy",
+      "items": ["To admonish the sinner.", "To instruct the ignorant.", "To counsel the doubtful.", "To comfort the sorrowful.", "To bear wrongs patiently.", "To forgive all injuries.", "To pray for the living and the dead."]
+    }
+  }
+}

@@ -1,8 +1,10 @@
 // Offline support: the page is fetched network-first so updates show up right away,
 // static assets are served from cache and refreshed in the background, and the cached page is the offline fallback.
-const CACHE = 'mediator-dei-v2';
-const SHELL = ['./', './index.html', './auth.js', './manifest.webmanifest', './icons/mediator-dei-192.png', './icons/mediator-dei-512.png'];
-
+// Bump CACHE (and the ?v= on the scripts in index.html) whenever a file below changes.
+const CACHE = 'mediator-dei-v3';
+const SHELL = ['./', './index.html', './js/content.js?v=3', './js/app.js?v=3', './auth.js', './manifest.webmanifest',
+  './data/mass.json', './data/devotions.json', './data/catechism.json',
+  './icons/mediator-dei-192.png', './icons/mediator-dei-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });
